@@ -16,7 +16,7 @@ object Operations2d {
     def col(colNum: Int): IndexedSeq[T] = vec.map(x => x(colNum))
 
     /** Grab a row of values and put them in a Vector */
-    def row(value: Int): IndexedSeq[T] = vec(value).map(x => x)
+    def row(value: Int): IndexedSeq[T] = vec(value)
 
     /** A method to filter by a boolean expression applied to a column */
     def filterByCol(op: T => Boolean)(colNum: Int): IndexedSeq[IndexedSeq[T]] = {
